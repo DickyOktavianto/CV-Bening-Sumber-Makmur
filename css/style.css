@@ -147,3 +147,31 @@ footer h5 {
     padding: 2.5rem;
   }
 }
+/* Floating Call Button */
+.call-float {
+  position: fixed;
+  width: 55px;
+  height: 55px;
+  bottom: 110px; /* posisi di atas WhatsApp */
+  right: 20px;
+  background-color: #0d6efd; /* biru bootstrap */
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.call-float img {
+  width: 28px;
+  height: 28px;
+}
+
+.call-float:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.35);
+}
